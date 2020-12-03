@@ -1,18 +1,8 @@
 class Vampire {
-    constructor(name, pet, thirsty) {
+    constructor(name, pet = 'bat', thirsty = true) {
       this.name = name;
       this.pet = pet;
-      if ( pet === undefined) {
-        this.pet = 'bat';
-      } else {
-        this.pet = pet;
-      }
       this.thirsty = thirsty;
-      if ( thirsty === undefined) {
-        this.thirsty = true;
-      } else {
-        this.thirsty = thirsty;
-      }
     }
 
     drink() {
